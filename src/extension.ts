@@ -109,7 +109,7 @@ function getPath(arg: string, pwd: string): string | undefined {
 
 function escapeWinPath(origPath: string) {
 	if (isWindows() && windowsNeedsEscape) {
-		return origPath?.replace(/\\/g, '\\\\');
+		return origPath;
 	} else {
 		return origPath;
 	}
